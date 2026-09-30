@@ -1,3 +1,5 @@
+DEFAULT_DELIVERY_FEE = 3.50
+
 class Delivery():
   def calculate(order,distance):
     items = 0
@@ -8,7 +10,7 @@ class Delivery():
     elif items > 5 and distance > 3:
       return 5
     else:
-      return 2.5
+      return DEFAULT_DELIVERY_FEE
 
 class Subtotal():
   def calculate(order):
